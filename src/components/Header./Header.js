@@ -11,7 +11,13 @@ export default function Header() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <button className="my-btn">Say Hello</button>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=maharabhossain0022@gmail.com&body="
+          >
+            <button className="my-btn">Say Hello</button>
+          </a>
         </Navbar.Collapse>
       </Container>
     </Navbar>

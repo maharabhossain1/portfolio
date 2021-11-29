@@ -35,9 +35,32 @@ code {
 }
 
 .title-font {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 .top-text {
   border-top: 2px solid var(--main-color-2);
   border-bottom: 2px solid var(--main-color-2);
+}
+.top-section {
+  margin: 130px 0px;
+}
+
+.image {
+  /* border-radius: 50% 50% 0 0px; */
+  border-top-left-radius: 50% 8.5rem;
+  border-top-right-radius: 50% 8.5rem;
+  width: 18.5rem;
+  height: 27rem;
+  padding: 10px;
+  background-image: url(./files/img/img1.jpeg);
+  border: 2px solid white;
+  background-size: cover;
+  margin: auto;
+}
+.mid-about {
+  border-top-left-radius: 50% 12rem;
+  border-top-right-radius: 50% 12rem;
+  padding-top: 250px;
+  padding-bottom: 80px;
+  background-color: var(--main-color-2);
 }
