@@ -4,7 +4,7 @@ import { BsFront, BsBack, BsTools } from "react-icons/bs";
 
 export default function Skills() {
   return (
-    <div className="">
+    <div className="skills-main">
       <Container className="w-75 py-5 custom-skills bg-light">
         <Row
           xs={1}

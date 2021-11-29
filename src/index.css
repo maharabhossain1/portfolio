@@ -67,5 +67,26 @@ code {
 .custom-skills {
   margin-top: -95px;
   border-radius: 15px;
-  margin-bottom: 20px;
+}
+
+.projects {
+  background-color: var(--main-color-2);
+  border-top-left-radius: 50% 12rem;
+  border-top-right-radius: 50% 12rem;
+}
+.Projects-start-text {
+  color: #fff;
+  padding: 50px 20px;
+  background-color: var(--main-color-1);
+  margin: auto;
+  border-radius: 15px;
+}
+.skills-main {
+  padding-bottom: 30px;
+}
+.custom-card {
+  background-color: var(--main-color-1) !important;
+  color: #fff;
+  padding-top: 20px;
+  border-radius: 15px !important;
 }
