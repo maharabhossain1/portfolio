@@ -4,7 +4,7 @@ import { Container, Row } from "react-bootstrap";
 export default function MidAbout() {
   return (
     <div className="mid-about">
-      <Container>
+      <Container className="py-5">
         <Row
           xs={1}
           md={2}

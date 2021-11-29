@@ -1,5 +1,6 @@
 import React from "react";
 import MidAbout from "./MidAbout/MidAbout";
+import Skills from "./Skills/Skills";
 import TopSection from "./TopSection/TopSection";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <TopSection />
       <MidAbout />
+      <Skills />
     </div>
   );
 }

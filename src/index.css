@@ -64,3 +64,8 @@ code {
   padding-bottom: 80px;
   background-color: var(--main-color-2);
 }
+.custom-skills {
+  margin-top: -95px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
