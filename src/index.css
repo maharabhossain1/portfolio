@@ -1,13 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Serif+Pro:wght@300;400&display=swap");
+
+:root {
+  --main-color-1: #141c3a;
+  --main-color-2: #7510f6;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* font-family: "Abril Fatface", cursive; */
+  font-family: "Source Serif Pro", serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.my-btn {
+  padding: 10px 35px;
+  border-radius: 30px;
+  border: 2px solid var(--main-color-2);
+  background-color: white;
+  color: var(--main-color-2);
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+.my-btn:hover {
+  background-color: var(--main-color-2);
+  color: #fff;
+}
+
+.icons {
+  font-size: 3rem;
+  color: #7510f6;
+}
+
+.title-font {
+  font-size: 4.5rem;
+}
+.top-text {
+  border-top: 2px solid var(--main-color-2);
+  border-bottom: 2px solid var(--main-color-2);
 }
