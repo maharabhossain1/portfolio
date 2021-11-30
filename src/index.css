@@ -104,3 +104,16 @@ code {
   text-align: center;
   color: #fff;
 }
+.nav-items {
+  color: var(--main-color-2) !important;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: 0.4s;
+  margin: 0px 20px;
+}
+.nav-items:hover {
+  color: #fff !important;
+  font-weight: bold;
+  background-color: var(--main-color-2);
+}

@@ -34,8 +34,15 @@ export default function Contect() {
         <p>
           My inbox is always open. Whether you have a question or just want to{" "}
           <br />
-          <button className="my-btn">Say Hi</button> <br /> I’ll try my best to
-          get back to you! Or Your can Sent Me Message Direct from here.
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:maharabhossain0022@gmail.com"
+          >
+            <button className="my-btn">Say Hello</button>
+          </a>
+          <br /> I’ll try my best to get back to you! Or Your can Sent Me
+          Message Direct from here.
         </p>
       </div>
       <Form ref={form} onSubmit={sendEmail}>
