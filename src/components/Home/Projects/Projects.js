@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Container, Row } from "react-bootstrap";
-import img1 from "./img/project-carcity.png";
-import img2 from "./img/project-courier.png";
-import img3 from "./img/project-medi.png";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
+  const [myProjects, setMyProjects] = useState([]);
+  useEffect(() => {
+    fetch("https://obscure-headland-70135.herokuapp.com/projects")
+      .then((res) => res.json())
+      .then((data) => setMyProjects(data));
+  }, []);
   return (
     <div className="projects mt-5">
       <div className="Projects-start-text w-75 d-lg-flex justify-content-evenly align-items-center">
@@ -25,39 +29,25 @@ export default function Projects() {
           lg={3}
           className="justify-content-evenly align-self-center py-5"
         >
-          <Card style={{ width: "22rem" }} className="custom-card my-1">
-            <Card.Img variant="top" src={img1} />
-            <Card.Body>
-              <Card.Title>Car-City Application</Card.Title>
-              <Card.Text>
-                Provide Cars with online support, and users can buy cars and
-                give a review, also manage Orders.
-              </Card.Text>
-              <button className="my-btn"> Details</button>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "22rem" }} className="custom-card my-1">
-            <Card.Img variant="top" src={img2} />
-            <Card.Body>
-              <Card.Title>Courier-Sheba Application</Card.Title>
-              <Card.Text>
-                Presuming Courier service. Users can take any service that the
-                website provides.
-              </Card.Text>
-              <button className="my-btn"> Details</button>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "22rem" }} className="custom-card my-1">
-            <Card.Img variant="top" src={img3} />
-            <Card.Body>
-              <Card.Title>Medi-Sheba Application</Card.Title>
-              <Card.Text>
-                Provide Medicine service. Purchasers can take any kind of
-                services that the website provides.
-              </Card.Text>
-              <button className="my-btn"> Details</button>
-            </Card.Body>
-          </Card>
+          {myProjects.map((project) => {
+            const { _id, img1, title, miniDetail } = project;
+            return (
+              <Card
+                style={{ width: "22rem" }}
+                className="custom-card my-1"
+                key={_id}
+              >
+                <Card.Img variant="top" src={img1} />
+                <Card.Body>
+                  <Card.Title>{title}</Card.Title>
+                  <Card.Text>{miniDetail}</Card.Text>
+                  <Link to={`project/${_id}`}>
+                    <button className="my-btn"> Details</button>{" "}
+                  </Link>
+                </Card.Body>
+              </Card>
+            );
+          })}
         </Row>
       </Container>
     </div>
