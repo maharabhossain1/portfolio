@@ -90,3 +90,7 @@ code {
   padding-top: 20px;
   border-radius: 15px !important;
 }
+
+.the-nav {
+  backdrop-filter: blur(15px);
+}

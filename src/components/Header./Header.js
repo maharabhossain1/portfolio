@@ -4,16 +4,16 @@ import { FaCode } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <Navbar>
-      <Container>
+    <Navbar sticky="top" className="the-nav">
+      <Container className="the-navbar">
         <Navbar.Brand href="#home">
           <FaCode className="icons" />
         </Navbar.Brand>
         <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
+        <Navbar.Collapse className="justify-content-end ">
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="mailto:maharabhossain0022@gmail.com"
           >
             <button className="my-btn">Say Hello</button>
