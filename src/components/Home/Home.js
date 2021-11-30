@@ -1,4 +1,5 @@
 import React from "react";
+import Contect from "../Contect/Contect";
 import MidAbout from "./MidAbout/MidAbout";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
@@ -11,6 +12,7 @@ export default function Home() {
       <MidAbout />
       <Skills />
       <Projects />
+      <Contect />
     </div>
   );
 }

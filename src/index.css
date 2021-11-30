@@ -73,6 +73,7 @@ code {
   background-color: var(--main-color-2);
   border-top-left-radius: 50% 12rem;
   border-top-right-radius: 50% 12rem;
+  padding-bottom: 150px;
 }
 .Projects-start-text {
   color: #fff;
@@ -93,4 +94,13 @@ code {
 
 .the-nav {
   backdrop-filter: blur(15px);
+}
+.custom-contect-text {
+  background-color: var(--main-color-1);
+  margin-bottom: 25px;
+  margin-top: -130px;
+  padding: 50px 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
 }

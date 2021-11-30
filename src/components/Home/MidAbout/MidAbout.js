@@ -12,8 +12,8 @@ export default function MidAbout() {
           className="justify-content-evenly align-self-center"
         >
           <div>
-            <div class="upper-div">
-              <div class="image"></div>
+            <div className="upper-div">
+              <div className="image"></div>
             </div>
             <hr className="w-75 bg-light m-auto my-3" />
             <hr className="w-50 bg-light m-auto my-3" />
