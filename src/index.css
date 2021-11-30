@@ -117,3 +117,7 @@ code {
   font-weight: bold;
   background-color: var(--main-color-2);
 }
+.img-style {
+  border-radius: 15px;
+  border: 15px solid var(--main-color-1);
+}

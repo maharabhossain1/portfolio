@@ -1,18 +1,24 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaCode } from "react-icons/fa";
+import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link";
+
 
 export default function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top" className="the-nav">
       <Container className="the-navbar">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/">
           <FaCode className="icons" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end ">
-          <Nav.Link href="#about" className="nav-items">
+          <Nav.Link as={HashLink} to="home/#about" className="nav-items">
             ABOUT
+          </Nav.Link>
+          <Nav.Link as={Link} to="blogs" className="nav-items">
+            BLOGS
           </Nav.Link>
           <Nav.Link
             target="_blank"
