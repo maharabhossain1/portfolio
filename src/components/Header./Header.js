@@ -14,7 +14,7 @@ export default function Header() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=maharabhossain0022@gmail.com&body="
+            href="mailto:maharabhossain0022@gmail.com"
           >
             <button className="my-btn">Say Hello</button>
           </a>
