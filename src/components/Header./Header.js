@@ -1,9 +1,8 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaCode } from "react-icons/fa";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-
 
 export default function Header() {
   return (
@@ -14,10 +13,10 @@ export default function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end ">
-          <Nav.Link as={HashLink} to="home/#about" className="nav-items">
+          <Nav.Link as={HashLink} to="home/#about" className="nav-items my-2">
             ABOUT
           </Nav.Link>
-          <Nav.Link as={Link} to="blogs" className="nav-items">
+          <Nav.Link as={Link} to="blogs" className="nav-items my-2">
             BLOGS
           </Nav.Link>
           <Nav.Link
