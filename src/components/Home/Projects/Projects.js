@@ -19,7 +19,9 @@ export default function Projects() {
           <p>Here are a few Websites projects I've worked on recently. </p>
         </div>
         <div>
-          <button className="my-btn">Let's Explore</button>
+          <Link to="exploreprojects">
+            <button className="my-btn">Let's Explore</button>
+          </Link>
         </div>
       </div>
       <Container className="w-75 py-5 custom-skills my-2">
