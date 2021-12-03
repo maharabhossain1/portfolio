@@ -8,8 +8,9 @@ export default function TopSection() {
         <h1 className="title-font">Junior Front-End Developer</h1>
         <div className="w-50 m-auto mt-5 text-center top-text pt-2">
           <p>
-            Hi I am Maharab, junior front-end developer. I build, <br /> Things
-            that lives in Internet, with simple code.
+            Hi I am <span className="fs-5">Maharab Hossain Opi</span>, Junior
+            front-end developer. I build, <br /> Things that lives in Internet,
+            with simple code.
           </p>
         </div>
         <a href="resume.pdf" title="" download>
