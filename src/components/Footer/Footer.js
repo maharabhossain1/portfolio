@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
 
 export default function Footer() {
@@ -13,7 +13,6 @@ export default function Footer() {
               <h4>Policy Info</h4>
               <li>Editorial Policy</li>
               <li>Privacy Policy</li>
-              <li>Vulnerability Disclosure Policy</li>
               <li>Terms and Conditions</li>
             </ul>
           </Col>
@@ -22,7 +21,6 @@ export default function Footer() {
               <h4>Useful Links</h4>
               <li>About </li>
               <li>Contect </li>
-              <li>Special Offers</li>
               <li>Need Help?</li>
             </ul>
           </Col>
@@ -31,10 +29,28 @@ export default function Footer() {
               <h4>Social Medial </h4>
               <li>Get in touched by Social media</li>
               <li>
-                <FaFacebook className="fs-1 m-1" />
-                <FaGithub className="fs-1 m-1" />
-                <FaInstagram className="fs-1 m-1" />
-                <FaTwitter className="fs-1 m-1" />
+                <a
+                  className="linktag"
+                  href="https://www.facebook.com/MaharabHossainOpiDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="fs-1 m-1 " />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/maharab-hossain-opi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="fs-1 m-1" />
+                </a>
+                <a
+                  href="https://twitter.com/maharab_webDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="fs-1 m-1" />
+                </a>
               </li>
             </ul>
           </Col>

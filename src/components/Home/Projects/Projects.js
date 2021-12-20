@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, Container, Row } from "react-bootstrap";
+import { FaWpexplorer } from "react-icons/fa";
+import { CgDetailsLess } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -20,7 +22,9 @@ export default function Projects() {
         </div>
         <div>
           <Link to="exploreprojects">
-            <button className="my-btn">Let's Explore</button>
+            <button className="my-btn">
+              Let's Explore <FaWpexplorer className="fs-2 mx-1" />
+            </button>
           </Link>
         </div>
       </div>
@@ -44,7 +48,10 @@ export default function Projects() {
                   <Card.Title>{title}</Card.Title>
                   <Card.Text>{miniDetail}</Card.Text>
                   <Link to={`project/${_id}`}>
-                    <button className="my-btn"> Details</button>{" "}
+                    <button className="my-btn">
+                      {" "}
+                      Details <CgDetailsLess className="fs-2" />
+                    </button>{" "}
                   </Link>
                 </Card.Body>
               </Card>

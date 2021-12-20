@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { GiPencil } from "react-icons/gi";
 import { HashLink } from "react-router-hash-link";
 
 export default function Header() {
@@ -24,7 +25,9 @@ export default function Header() {
             rel="noopener noreferrer"
             href="mailto:maharabhossain0022@gmail.com"
           >
-            <button className="my-btn">Say Hello</button>
+            <button className="my-btn">
+              Say Hello <GiPencil className="fs-4" />
+            </button>
           </Nav.Link>
         </Navbar.Collapse>
       </Container>

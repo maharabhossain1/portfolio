@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { FloatingLabel, Form } from "react-bootstrap";
+import { GiVolleyballBall } from "react-icons/gi";
 
 export default function Contect() {
   const [confirm, setConfirm] = useState(false);
@@ -39,13 +40,13 @@ export default function Contect() {
             rel="noopener noreferrer"
             href="mailto:maharabhossain0022@gmail.com"
           >
-            <button className="my-btn">Say Hello</button>
+            <button className="my-btn my-2">Say Hello</button>
           </a>
           <br /> I’ll try my best to get back to you! Or Your can Sent Me
           Message Direct from here.
         </p>
       </div>
-      <Form ref={form} onSubmit={sendEmail}>
+      <Form ref={form} onSubmit={sendEmail} className="my-5">
         <FloatingLabel
           controlId="floatingInput"
           label="Subject"
@@ -80,7 +81,7 @@ export default function Contect() {
           />
         </FloatingLabel>
         <button type="submit" className="my-btn my-3 ">
-          Sent Me your Message{" "}
+          Sent Me your Message <GiVolleyballBall className="fs-4 mx-1" />
         </button>
       </Form>
       {confirm && (
