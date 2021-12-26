@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
 
 export default function Footer() {
@@ -31,14 +31,14 @@ export default function Footer() {
               <li>
                 <a
                   className="linktag"
-                  href="https://www.facebook.com/MaharabHossainOpiDev"
+                  href="https://www.linkedin.com/in/maharab-hossain-opi/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook className="fs-1 m-1 " />
+                  <FaLinkedin className="fs-1 m-1 " />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/maharab-hossain-opi/"
+                  href="https://github.com/maharabhossain1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
