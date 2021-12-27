@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { GiPencil } from "react-icons/gi";
 import { HashLink } from "react-router-hash-link";

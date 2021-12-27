@@ -50,7 +50,7 @@ code {
   width: 18.5rem;
   height: 27rem;
   padding: 10px;
-  background-image: url(./files/img/img1.jpg);
+  background-image: url(./files/img/maharabHossainOpi.jpg);
   border: 2px solid white;
   background-size: cover;
   margin: auto;
@@ -120,7 +120,9 @@ code {
   border: 15px solid var(--main-color-1);
 }
 
+/* ============================================== */
 /* this is my name animation in openning the lage  */
+/* ============================================== */
 
 .logo-container {
   background-color: var(--main-color-1);
